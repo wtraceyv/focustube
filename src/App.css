@@ -48,8 +48,9 @@ html {
   align-items: center;
 }
 
-/* .inline > h2 {
-} */
+.inline > h2 {
+  margin-left: 10px;
+}
 
 
 .App-link {
@@ -57,6 +58,6 @@ html {
 }
 
 /* Main Content area left */
-.border-check {
+/* .border-check {
   border: 2px solid white;
-}
+} */
