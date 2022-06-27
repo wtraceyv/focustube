@@ -1,22 +1,16 @@
 import './App.css';
+import Footer from './Footer';
 import FocusHeader from './Header';
 import MainContent from './MainContent';
+import Search from './Search';
 
 function App() {
   return (
     <div className="App">
       <FocusHeader />
+      <Search />
       <MainContent />
-      <footer>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </footer>
+      <Footer /> 
     </div>
   );
 }

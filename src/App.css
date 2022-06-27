@@ -6,6 +6,10 @@ html {
   background-color: var(--background-gray);
 }
 
+p {
+  color: rgb(124, 124, 124);
+}
+
 .App {
   background-color: var(--background-gray);
   text-align: center;
@@ -61,3 +65,17 @@ html {
 /* .border-check {
   border: 2px solid white;
 } */
+
+.iframe-area {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.iframe-area iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+}

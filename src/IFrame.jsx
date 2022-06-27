@@ -1,15 +1,11 @@
-import React, { useRef, useEffect, useState } from 'react';
-import { Button } from 'react-bootstrap';
+import React, { useEffect, useState } from 'react';
+import { Button, Container, Row } from 'react-bootstrap';
 import './App.css';
 
 function vidSrcTemplate(id) {
   var prefix = "https://www.youtube.com/embed/";
   var suffix = "?autoplay=0";
   return prefix + id + suffix;
-}
-
-function test() {
-  console.log("hey there");
 }
 
 var ytplayer;
@@ -52,14 +48,20 @@ const IFrame = () => {
   }, [])
 
   return (
-    <div className='iframe-area'>
-      <div id="playerSpace"></div>
-      <Button
-        onClick={() => switchVid()}
-      >
-        Change Video
-      </Button>
-    </div>
+    <Container>
+      <Row>
+        <div className='iframe-area'>
+          <div id="playerSpace"></div>
+        </div>
+      </Row>
+      <Row>
+        <Button
+          onClick={() => switchVid()}
+        >
+          Change Video
+        </Button>
+      </Row>
+    </Container>
   );
 
 };
