@@ -1,4 +1,4 @@
-import './App.css';
+import './../App.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import IFrame from './IFrame';
 import VideoQueue from './VideoQueue';

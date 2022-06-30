@@ -1,4 +1,4 @@
-import './App.css';
+import './../App.css';
 import { Col, Container, Card, Button, Row } from 'react-bootstrap';
 import { useState } from 'react';
 
@@ -12,6 +12,7 @@ function VideoQueue() {
   const [renderedQueue, setRenderedQueue] = useState([
     { id: 0, title: "test1", pic: "pic here" },
     { id: 1, title: "test2", pic: "pic here" },
+    { id: 2, title: "test3", pic: "pic here" },
   ]);
 
   // Perform swap on a copied dummy array, set used queue state to result to rerender

@@ -1,4 +1,4 @@
-import './App.css';
+import './../App.css';
 
 function FocusHeader() {
   return (

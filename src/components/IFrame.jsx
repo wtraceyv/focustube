@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Container, Row } from 'react-bootstrap';
-import './App.css';
+import './../App.css';
 
 function vidSrcTemplate(id) {
   var prefix = "https://www.youtube.com/embed/";
@@ -15,9 +15,10 @@ const IFrame = () => {
   const [curVideoID, setCurVideoID] = useState(0);
   const [curVideoURL, setCurVideoURL] = useState("https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=0");
 
+  // YouTube API Ready callback routed here, so by this time 
+  // YT.Player should exist and we can fill the div with the actual IFrame.
   function check() {
     if (window.YT && window.YT.Player) {
-      console.log("YT is a thing");
       ytplayer = new window.YT.Player('playerSpace', {
         height: '390',
         width: '640',
@@ -26,16 +27,18 @@ const IFrame = () => {
     }
   }
 
+  // Fetch and open a new vid
+  // TODO: supply props to component so can grab vid from queue
   function switchVid() {
     setCurVideoID((curVideoID + 1) % exampleIDs.length);
     setCurVideoURL(vidSrcTemplate(exampleIDs[curVideoID]));
     ytplayer.loadVideoByUrl(curVideoURL, 0);
   }
 
+  // Insert the link as a script tag to load the iframe API and 
+  // reroute its ready callback so React can still handle it
   useEffect(() => {
     if (!window.YT) {
-      console.log("Staring IFrame Player API load..");
-      // 2. This code loads the IFrame Player API code asynchronously.
       var tag = document.createElement('script');
       tag.src = "https://www.youtube.com/iframe_api";
       var firstScriptTag = document.getElementsByTagName('script')[0];
