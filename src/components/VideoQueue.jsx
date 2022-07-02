@@ -6,14 +6,16 @@ import { useState } from 'react';
 // The queue management and the cards in the queue with their behavior 
 // is all here because the behavior is all coupled together, there is 
 // no great reason to separate the components.
-function VideoQueue() {
+function VideoQueue(props) {
+
   // State to track an array encapsulating video objects to display. 
   // (main queue renders order based on this state)
-  const [renderedQueue, setRenderedQueue] = useState([
-    { id: 0, title: "test1", pic: "pic here" },
-    { id: 1, title: "test2", pic: "pic here" },
-    { id: 2, title: "test3", pic: "pic here" },
-  ]);
+  // const [renderedQueue, setRenderedQueue] = useState([
+  //   { id: 0, title: "test1", pic: "pic here" },
+  //   { id: 1, title: "test2", pic: "pic here" },
+  //   { id: 2, title: "test3", pic: "pic here" },
+  // ]);
+  const [renderedQueue, setRenderedQueue] = useState([]);
 
   // Perform swap on a copied dummy array, set used queue state to result to rerender
   function queueSwap(id, isSwappingUp) {
@@ -94,7 +96,9 @@ function VideoQueue() {
       <h1>Le Queue of Videos</h1>
       <Container>
         {
-          renderedQueue.map(card => <VideoCard key={card.id} id={card.id} index={card.id} title={card.title} pic={card.pic} />)
+          renderedQueue.length > 0 ?
+            renderedQueue.map(card => <VideoCard key={card.id} id={card.id} index={card.id} title={card.title} pic={card.pic} />)
+            : <p>Make a search to queue some videos here</p>
         }
       </Container>
     </div>

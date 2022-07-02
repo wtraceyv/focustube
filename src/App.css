@@ -74,6 +74,11 @@ p {
   width: 100%;
   background-color: #ffffff88;
 }
+
+.search-bar input:hover{
+  box-shadow: 0 0 15px cyan, 0 0 0 5px #ffffffeb;
+}
+
 .search-bar input:focus {
   box-shadow: 0 0 40px cyan, 0 0 0 5px #ffffffeb;
 }
@@ -83,6 +88,10 @@ p {
   scale: 1.1;
   border: none;
   margin-left: 20px;
+}
+
+.search-bar button:hover{
+  box-shadow: 0 0 40px cyan, 0 0 0 5px #ffffffeb;
 }
 
 .search-bar button:focus {
@@ -110,4 +119,9 @@ p {
   left: 0;
   width: 100%;
   height: 90%;
+}
+
+/* footer */
+footer {
+  margin-top: 10%;
 }
