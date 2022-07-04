@@ -8,10 +8,14 @@ import Search from './components/Search';
 function App() {
   const [somethingToShow, setSomethingToShow] = useState(false);
   const [showVideo, setShowVideo] = useState(false);
+  const [searchData, setSearchData] = useState(null);
+  const [nextPageToken, setNextPageToken] = useState("");
 
-  function searchJustPerformed() {
+  function searchJustPerformed(data, nextPageToken) {
     setShowVideo(false);
     setSomethingToShow(true);
+    setSearchData(data);
+    setNextPageToken(nextPageToken);
   }
 
   function videoJustStarted() {
@@ -22,9 +26,14 @@ function App() {
   return (
     <div className="App">
       <FocusHeader />
-      <Search onSearchSubmit={searchJustPerformed}/>
-      <MainContent somethingToShow={somethingToShow} showVideo={showVideo} />
-      <Footer /> 
+      <Search onSearchSubmit={searchJustPerformed} />
+      <MainContent
+        somethingToShow={somethingToShow}
+        showVideo={showVideo}
+        searchData={searchData} 
+        nextPageToken={nextPageToken} 
+      />
+      <Footer />
     </div>
   );
 }

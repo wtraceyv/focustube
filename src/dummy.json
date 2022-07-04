@@ -1,0 +1,1026 @@
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "SAXoyBqbTSyVAs1PwHj05_ThqAQ",
+  "nextPageToken": "CB4QAA",
+  "regionCode": "US",
+  "pageInfo": {
+    "totalResults": 1000000,
+    "resultsPerPage": 30
+  },
+  "items": [
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Pz5trpfLSR8BaA_ECf3qmMOFO04",
+      "id": {
+        "kind": "youtube#channel",
+        "channelId": "UC-sJ8u8eu_ivfzekwkue38g"
+      },
+      "snippet": {
+        "publishedAt": "2011-05-16T16:12:01Z",
+        "channelId": "UC-sJ8u8eu_ivfzekwkue38g",
+        "title": "Super GT",
+        "description": "I make videos mainly on the Gran Turismo series (plus other racing games) and I also make videos on IRL Kart Racing. Follow me ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/ytc/AKedOLSNZN5Qo-CNLDcvRX3VuS6ytyV5FvxQJ16EvELb2g=s88-c-k-c0xffffffff-no-rj-mo"
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/ytc/AKedOLSNZN5Qo-CNLDcvRX3VuS6ytyV5FvxQJ16EvELb2g=s240-c-k-c0xffffffff-no-rj-mo"
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/ytc/AKedOLSNZN5Qo-CNLDcvRX3VuS6ytyV5FvxQJ16EvELb2g=s800-c-k-c0xffffffff-no-rj-mo"
+          }
+        },
+        "channelTitle": "Super GT",
+        "liveBroadcastContent": "none",
+        "publishTime": "2011-05-16T16:12:01Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "y-hxUwO1AVk2A3fWHevlg1UjIaA",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "yAlkmWiYkmI"
+      },
+      "snippet": {
+        "publishedAt": "2022-06-30T16:00:39Z",
+        "channelId": "UC-sJ8u8eu_ivfzekwkue38g",
+        "title": "The Best Gran Turismo Race of The Year",
+        "description": "Scott Speed is clear in the GOAT debate. Follow & Contact me here: ➡️️ Channel Membership http://bit.ly/2GAgkUl ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/yAlkmWiYkmI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/yAlkmWiYkmI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/yAlkmWiYkmI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Super GT",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-06-30T16:00:39Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "SME0LYmzgPZ0IqaND3c-nUrC9oM",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "_6hgEzwgQgc"
+      },
+      "snippet": {
+        "publishedAt": "2022-06-27T22:57:49Z",
+        "channelId": "UC-sJ8u8eu_ivfzekwkue38g",
+        "title": "Super GT Streaming Gran Turismo 7. Imagine That.",
+        "description": "Hello viewers. Tip the stream here: https://streamelements.com/xsuperxgtx/tip Follow & Contact me here: ➡️️ Channel ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/_6hgEzwgQgc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/_6hgEzwgQgc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/_6hgEzwgQgc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Super GT",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-06-27T22:57:49Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "STlef-KoH2U9jJ2FfH8C4kI5T_c",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "VGeX2IG9Kd8"
+      },
+      "snippet": {
+        "publishedAt": "2022-06-28T18:00:20Z",
+        "channelId": "UC-sJ8u8eu_ivfzekwkue38g",
+        "title": "Gran Turismo 7: These Penalties Killed My Race",
+        "description": "Watkins Glen. Top Split. Daily Race. Don't make a mistake or you're done. Follow & Contact me here: ➡️️ Channel ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/VGeX2IG9Kd8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/VGeX2IG9Kd8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/VGeX2IG9Kd8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Super GT",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-06-28T18:00:20Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "UH25MjzAbUK38E7kaIfjczryr_8",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "UN8O45b6DKk"
+      },
+      "snippet": {
+        "publishedAt": "2022-06-14T16:00:53Z",
+        "channelId": "UC-sJ8u8eu_ivfzekwkue38g",
+        "title": "My Second Ever REAL Car Race",
+        "description": "My second ever car race! I was kindly invited by GT Radial to be part of their team in the VW Fun Cup. This round was at Oulton ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/UN8O45b6DKk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/UN8O45b6DKk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/UN8O45b6DKk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Super GT",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-06-14T16:00:53Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "yL7WBRy2S5bcm7lpal7KO2_Z7OY",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "bd4A6ek9_ck"
+      },
+      "snippet": {
+        "publishedAt": "2022-04-28T19:15:00Z",
+        "channelId": "UC-sJ8u8eu_ivfzekwkue38g",
+        "title": "My First Ever REAL Car Races",
+        "description": "My first ever real car races at Silverstone International in the BRSCC Mazda MX-5 Championship! This is my first step into car ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/bd4A6ek9_ck/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/bd4A6ek9_ck/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/bd4A6ek9_ck/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Super GT",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-04-28T19:15:00Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Mk2gZa9yfUqXjCYVvxCzMtfBcic",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "9gfrMP1u_zU"
+      },
+      "snippet": {
+        "publishedAt": "2022-06-09T19:30:03Z",
+        "channelId": "UC-sJ8u8eu_ivfzekwkue38g",
+        "title": "Gran Turismo 7 Oval Racing is Hilarious",
+        "description": "Oval racing + no penalties = death Follow & Contact me here: ➡️️ Channel Membership http://bit.ly/2GAgkUl ➡️️ Twitter ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/9gfrMP1u_zU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/9gfrMP1u_zU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/9gfrMP1u_zU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Super GT",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-06-09T19:30:03Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "CUjYdWTZqhIfgfvDiMkpUi37V8s",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "PoHMzjlW-5o"
+      },
+      "snippet": {
+        "publishedAt": "2022-06-23T19:00:18Z",
+        "channelId": "UC-sJ8u8eu_ivfzekwkue38g",
+        "title": "The Best Track They&#39;ve Added to Gran Turismo 7....",
+        "description": "Watkins Glen has now been added to GT7, so I thought I'd give it a go with some online multiplayer races. Follow & Contact me ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/PoHMzjlW-5o/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/PoHMzjlW-5o/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/PoHMzjlW-5o/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Super GT",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-06-23T19:00:18Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "pevG04-fC3aoKxTlTSMjcoFXFqY",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "00PCVX__k0M"
+      },
+      "snippet": {
+        "publishedAt": "2022-06-22T18:00:00Z",
+        "channelId": "UC-sJ8u8eu_ivfzekwkue38g",
+        "title": "The Best Gran Turismo 7 Update Yet?",
+        "description": "Update 1.17 drops on Thursday 23rd June and features the following: - Watkins Glen International Circuit - SUZUKI V6 Escudo ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/00PCVX__k0M/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/00PCVX__k0M/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/00PCVX__k0M/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Super GT",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-06-22T18:00:00Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "L-Qalv1cEdXlvqRvthaOmOYqURw",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "f9CTpRIFJTo"
+      },
+      "snippet": {
+        "publishedAt": "2022-05-10T17:00:31Z",
+        "channelId": "UC-sJ8u8eu_ivfzekwkue38g",
+        "title": "The Gran Turismo Corner Where Everyone Crashed",
+        "description": "The Death Chicane - it's back and it's claiming more lives than ever before. Follow & Contact me here: ➡️️ Channel ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/f9CTpRIFJTo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/f9CTpRIFJTo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/f9CTpRIFJTo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Super GT",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-05-10T17:00:31Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "u8BJ9H9BuOv8XHz-Txx0SreS-EA",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "UEacgV0PC1I"
+      },
+      "snippet": {
+        "publishedAt": "2022-05-17T17:00:14Z",
+        "channelId": "UC-sJ8u8eu_ivfzekwkue38g",
+        "title": "The Gran Turismo Exploit Which Makes You Much Faster",
+        "description": "Another day, another exploit in GT7. Love it. Follow & Contact me here: ➡️️ Channel Membership http://bit.ly/2GAgkUl ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/UEacgV0PC1I/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/UEacgV0PC1I/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/UEacgV0PC1I/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Super GT",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-05-17T17:00:14Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "c0kTe6MhxsBQGVoIze3tFkv7Dxk",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "8hr1LYzkHL0"
+      },
+      "snippet": {
+        "publishedAt": "2022-05-27T16:00:04Z",
+        "channelId": "UC-sJ8u8eu_ivfzekwkue38g",
+        "title": "The Gran Turismo Mayhem Returns",
+        "description": "Jumping back into the daily races at Monza, what could go wrong? Follow & Contact me here: ➡️️ Channel Membership ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/8hr1LYzkHL0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/8hr1LYzkHL0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/8hr1LYzkHL0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Super GT",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-05-27T16:00:04Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "9HqwROO0Pnaf7s249WW7TnIHyWQ",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "RGeqDwk0v6c"
+      },
+      "snippet": {
+        "publishedAt": "2022-01-19T21:30:01Z",
+        "channelId": "UC-sJ8u8eu_ivfzekwkue38g",
+        "title": "Gran Turismo Sport: I Thought Rain Races were Rubbish",
+        "description": "The rain is back.... I've never really got on with the rain races, until this session. REUPLOAD COS OF LOADS OF FLASH ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/RGeqDwk0v6c/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/RGeqDwk0v6c/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/RGeqDwk0v6c/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Super GT",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-01-19T21:30:01Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "6SIu814upU5VTYhX5O7qwzSVie4",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "0AZMXU-V2_o"
+      },
+      "snippet": {
+        "publishedAt": "2022-05-09T22:48:17Z",
+        "channelId": "UC-sJ8u8eu_ivfzekwkue38g",
+        "title": "Gran Turismo 7: Taking on The New Online Races",
+        "description": "Another week. Another set of 'daily' races. Race A: BRZ/GT86 - Nurburgring GP Race B: GR.4 - Trial Mountain Race C: GR.3 ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/0AZMXU-V2_o/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/0AZMXU-V2_o/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/0AZMXU-V2_o/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Super GT",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-05-09T22:48:17Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "s-swnR4sE_eXiB2i869hRcFLuPs",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "E-3WxML2ubg"
+      },
+      "snippet": {
+        "publishedAt": "2022-04-26T19:30:03Z",
+        "channelId": "UC-sJ8u8eu_ivfzekwkue38g",
+        "title": "Gran Turismo 7: This Race is Very Fun... But Also Dangerous",
+        "description": "Radical SR3's around Laguna Seca in Daily Race A, what could possibly go wrong? Follow & Contact me here: ➡️️ Channel ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/E-3WxML2ubg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/E-3WxML2ubg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/E-3WxML2ubg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Super GT",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-04-26T19:30:03Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "j8z4t-Oyc6nJHMA9UBYX5ND75aI",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "hB6VBJzPhtI"
+      },
+      "snippet": {
+        "publishedAt": "2020-07-19T08:41:35Z",
+        "channelId": "UCaTxfj0BzL-MaCy-YUqPRoQ",
+        "title": "SUPER GT 2020 Round 1 - Full Race, Live, English - Fuji Speedway",
+        "description": "SUPER GT IS BACK ON YOUTUBE! Thanks to your unwavering fan support and the backing of Engine Media Group (looks up, ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/hB6VBJzPhtI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/hB6VBJzPhtI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/hB6VBJzPhtI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "THE RACE",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-07-19T08:41:35Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "S0tn6Sx7FOoMdbvNUZC8T_J8rTM",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "A-CYPjt26_k"
+      },
+      "snippet": {
+        "publishedAt": "2022-05-04T18:00:02Z",
+        "channelId": "UC-sJ8u8eu_ivfzekwkue38g",
+        "title": "Gran Turismo 7: This Guy Was Determined to Stop Me",
+        "description": "My hunt for improvement around one of my worst tracks - Fuji ft. a rather over-zealous dude who did everything he could to stop ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/A-CYPjt26_k/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/A-CYPjt26_k/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/A-CYPjt26_k/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Super GT",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-05-04T18:00:02Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "cPqBi_7xKZYOzvwtfdvNKiE_uYo",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "pSPs3LGq1Wo"
+      },
+      "snippet": {
+        "publishedAt": "2022-03-15T18:00:15Z",
+        "channelId": "UC-sJ8u8eu_ivfzekwkue38g",
+        "title": "Gran Turismo 7: The Most Dramatic Ending to a Race",
+        "description": "A new week brings us a fresh set of daily races. This is coverage of one of the daily races I had at Daytona in the Gr.3 cars. Follow ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/pSPs3LGq1Wo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/pSPs3LGq1Wo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/pSPs3LGq1Wo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Super GT",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-03-15T18:00:15Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "ZPBFi1MwyufAYGeYAK6lFtWj9ng",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "Ba2EDJUCwrE"
+      },
+      "snippet": {
+        "publishedAt": "2022-01-25T20:00:07Z",
+        "channelId": "UC-sJ8u8eu_ivfzekwkue38g",
+        "title": "Gran Turismo Sport: This Race Causes Endless Chaos",
+        "description": "Penalties + tricky car + endless slipstream = This carnage-filled race Follow & Contact me here: ➡️️ Channel Membership ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Ba2EDJUCwrE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Ba2EDJUCwrE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Ba2EDJUCwrE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Super GT",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-01-25T20:00:07Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "ggKgq8l8U1Id_0S45BpjxKF44Lw",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "-A3jmVigrPg"
+      },
+      "snippet": {
+        "publishedAt": "2021-12-09T19:00:00Z",
+        "channelId": "UC-sJ8u8eu_ivfzekwkue38g",
+        "title": "Gran Turismo Sport: The Grand Prix of Absolute Carnage",
+        "description": "Exhibit A: The F1500T-A. Probably the most dangerous car in the game. TyrannoCyrusRex: www.twitch.tv/tyrannocyrusrex Follow ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/-A3jmVigrPg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/-A3jmVigrPg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/-A3jmVigrPg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Super GT",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-12-09T19:00:00Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "bNvQ23UU5Rvh_6PxXEkhWqcOW9M",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "Lpjpe-xhe-4"
+      },
+      "snippet": {
+        "publishedAt": "2022-04-02T16:00:06Z",
+        "channelId": "UC-sJ8u8eu_ivfzekwkue38g",
+        "title": "Gran Turismo 7 The Filthiest Race of All Time",
+        "description": "Pure filth mate. Follow & Contact me here: ➡️️ Channel Membership http://bit.ly/2GAgkUl ➡️️ Twitter https://bit.ly/3mSEImE ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Lpjpe-xhe-4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Lpjpe-xhe-4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Lpjpe-xhe-4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Super GT",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-04-02T16:00:06Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "zuYGfsuw079ZpiTgfC9wJsXqB1Y",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "-Ap0sGXDH1A"
+      },
+      "snippet": {
+        "publishedAt": "2022-05-03T19:30:00Z",
+        "channelId": "UC-sJ8u8eu_ivfzekwkue38g",
+        "title": "Gran Turismo 7: This Game is Better Now",
+        "description": "A great manufacturers race I had recently after update 1.13 made it actually possible to drive the BMW M6 without dying of death.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/-Ap0sGXDH1A/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/-Ap0sGXDH1A/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/-Ap0sGXDH1A/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Super GT",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-05-03T19:30:00Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Wa_eXaBxLyvEaXmVaQwbhGbGxp8",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "k1p4Cc2UVog"
+      },
+      "snippet": {
+        "publishedAt": "2022-03-11T00:43:57Z",
+        "channelId": "UC-sJ8u8eu_ivfzekwkue38g",
+        "title": "Gran Turismo 7 - Beating my Licence Times",
+        "description": "Improving my licence test results in Gran Turismo 7. Tip the stream here: https://streamelements.com/xsuperxgtx/tip Follow ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/k1p4Cc2UVog/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/k1p4Cc2UVog/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/k1p4Cc2UVog/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Super GT",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-03-11T00:43:57Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "vQ6LdeOI6voEnLtuBoBAT91rLsQ",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "qIKQsnnpqG0"
+      },
+      "snippet": {
+        "publishedAt": "2021-10-04T18:00:13Z",
+        "channelId": "UC-sJ8u8eu_ivfzekwkue38g",
+        "title": "Gran Turismo Sport: The Maddest Race in a While",
+        "description": "epic toyota tundra truck racing gameplay. Thank you for 600k subscribers =) Follow and Support me here ➡️️ Channel ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/qIKQsnnpqG0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/qIKQsnnpqG0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/qIKQsnnpqG0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Super GT",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-10-04T18:00:13Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "h_fMiyyCtudSA_z6YgnQPm8w4rw",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "XXDnOa-ypu4"
+      },
+      "snippet": {
+        "publishedAt": "2022-03-23T20:10:23Z",
+        "channelId": "UC-sJ8u8eu_ivfzekwkue38g",
+        "title": "Gran Turismo 7: My First World Series Races for Mazda",
+        "description": "My first races in the new Manufacturers Cup in Gran Turismo 7, competing for Mazda on my EMEA account and with Renault on ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/XXDnOa-ypu4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/XXDnOa-ypu4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/XXDnOa-ypu4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Super GT",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-03-23T20:10:23Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "nOh4yRh-LYy7IRxApU6iamLQIIY",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "O2RobsDvrEI"
+      },
+      "snippet": {
+        "publishedAt": "2022-04-08T16:00:24Z",
+        "channelId": "UC-sJ8u8eu_ivfzekwkue38g",
+        "title": "Gran Turismo 7: Incredible Race in Rainy Conditions",
+        "description": "An absolutely incredible race I had in round 4 of the manufacturers season. Using the BMW M4 Gr.4 car around High Speed Ring.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/O2RobsDvrEI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/O2RobsDvrEI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/O2RobsDvrEI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Super GT",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-04-08T16:00:24Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "x4r1pQ661PXzxHsl0n7EzGbWCqk",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "eq2vIfp1u7E"
+      },
+      "snippet": {
+        "publishedAt": "2021-11-08T19:00:09Z",
+        "channelId": "UC-sJ8u8eu_ivfzekwkue38g",
+        "title": "Gran Turismo Sport: It Only Took Them 4 Years...",
+        "description": "Gr.1 Suzuka. What a time to be alive. Follow & Contact me here: ➡️️ Channel Membership http://bit.ly/2GAgkUl ➡️️ Twitter ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/eq2vIfp1u7E/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/eq2vIfp1u7E/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/eq2vIfp1u7E/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Super GT",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-11-08T19:00:09Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "fHmBNCXVVeifO4xOWslnAMEolGY",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "73s4JJr_-gk"
+      },
+      "snippet": {
+        "publishedAt": "2022-03-17T00:28:07Z",
+        "channelId": "UC-sJ8u8eu_ivfzekwkue38g",
+        "title": "Gran Turismo 7 - Hoping for More Epic Online Races...",
+        "description": "Having fun with these daily races so let's do more =) Tip the stream here: https://streamelements.com/xsuperxgtx/tip Follow ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/73s4JJr_-gk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/73s4JJr_-gk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/73s4JJr_-gk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Super GT",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-03-17T00:28:07Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "9Pa8KRJwRdeVbioHTiBYyLaJMJk",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "e_mB2kbAWOA"
+      },
+      "snippet": {
+        "publishedAt": "2022-03-02T11:05:29Z",
+        "channelId": "UC-sJ8u8eu_ivfzekwkue38g",
+        "title": "My Honest Review of Gran Turismo 7",
+        "description": "My review of the newest game in the Gran Turismo franchise. I've played the game for a good 25-30 hours before making this ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/e_mB2kbAWOA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/e_mB2kbAWOA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/e_mB2kbAWOA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Super GT",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-03-02T11:05:29Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "FR0Z85sc0A9BAn9xqqlt4-5qCzA",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "ZJtFeWRysfc"
+      },
+      "snippet": {
+        "publishedAt": "2022-05-26T17:30:05Z",
+        "channelId": "UC-sJ8u8eu_ivfzekwkue38g",
+        "title": "I Drove Lando Norris&#39; New Race Kart",
+        "description": "My first drive of the new LN Kart. Follow & Contact me here: ➡️️ Channel Membership http://bit.ly/2GAgkUl ➡️️ Twitter ...",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/ZJtFeWRysfc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/ZJtFeWRysfc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/ZJtFeWRysfc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Super GT",
+        "liveBroadcastContent": "none",
+        "publishTime": "2022-05-26T17:30:05Z"
+      }
+    }
+  ]
+}
