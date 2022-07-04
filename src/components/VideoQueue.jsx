@@ -92,7 +92,7 @@ function VideoQueue(props) {
   // The whole mapping of the list, this gets rerendered when the array state is updated
   // TODO: Fill with proper info via props from elsewhere (from call to YouTube data API)  
   return (
-    <div>
+    <div className='video-queue'>
       <h1>Le Queue of Videos</h1>
       <Container>
         {

@@ -13,9 +13,18 @@ body {
   font-family: 'Nanum Gothic', sans-serif;
 }
 
+body a {
+  color: cyan;
+}
+
+body h1 {
+  color: rgb(124, 124, 124);
+}
+
 p {
   color: rgb(124, 124, 124);
 }
+
 
 .App {
   background-color: var(--background-gray);
@@ -106,7 +115,7 @@ p {
 
 /* Main Content area left */
 /* .border-check {
-  border: 2px solid white;
+  border-left: 2px solid white;
 } */
 
 .iframe-area {
@@ -127,6 +136,9 @@ p {
   max-height: 60vh;
   overflow-x: hidden;
   overflow-y: scroll; 
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 1em;
 }
 
 .search-card {
@@ -156,6 +168,11 @@ p {
 
 .search-video-info Button {
   margin-bottom: 1em;
+}
+
+.video-queue {
+  border-left: 2px solid white;
+  border-right: 2px solid white;
 }
 
 /* footer */
