@@ -1,13 +1,16 @@
 import './../App.css';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import { useEffect, useState } from 'react';
 
 // Recieve and list a set of results from YouTube so user can choose to 
 // queue them for later. Shown after a search but hidden (by MainContent) 
 // when trying to watch a video.
 function SearchResults(props) {
-
   let channelPrefix = "https://www.youtube.com/channel/";
+
   function SearchResultCard(cardProps) {
+    const [queueInfo, setQueueInfo] = useState(cardProps);
+
     return (
       <Container className='search-card'>
         <Row>
@@ -19,9 +22,9 @@ function SearchResults(props) {
             <div className='search-video-info'>
               {/* Right/bottom text for title/desc/channel */}
               <h4>{cardProps.title}</h4>
-              <p><a href={cardProps.channelPrefix + cardProps.channelId}>{cardProps.channelTitle}</a></p>
+              <p><a href={cardProps.channelPrefix + cardProps.channelId}><>{cardProps.channelTitle}</></a></p>
               <p>{cardProps.description} ...</p>
-              <Button className='btn-info'>Add to Queue</Button>
+              <Button className='btn-info' onClick={() => props.queueVideo(queueInfo)}>Add to Queue</Button>
             </div>
           </Col>
         </Row>
@@ -34,15 +37,17 @@ function SearchResults(props) {
     <div className='search-results'>
       {
         props.searchData.map(item => 
-          (item.id.kind == "youtube#video") ?
+          (item.id.kind === "youtube#video") ?
           <SearchResultCard
+            videoId={item.videoId}
             thumbnailLink={item.snippet.thumbnails.medium.url}
             title={decodeURI(item.snippet.title)}
             channelId={item.snippet.channelId}
             channelTitle={item.snippet.channelTitle}
             description={item.snippet.description.split('.')[0]}
+            key={item.etag}
           /> :
-          <></>
+          <div key={item.etag}></div>
         )
       }
     </div>
