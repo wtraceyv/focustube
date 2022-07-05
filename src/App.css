@@ -171,8 +171,13 @@ p {
 }
 
 .video-queue {
-  border-left: 2px solid white;
-  border-right: 2px solid white;
+  
+}
+
+.queue-card {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
 }
 
 /* footer */

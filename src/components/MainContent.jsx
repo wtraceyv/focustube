@@ -42,6 +42,10 @@ function MainContent(props) {
     setRenderedQueue(newQueue);
   }
 
+  function clearQueue() {
+    setRenderedQueue([]);
+  }
+
   function videoJustStarted() {
     // user chose to start watching a video, unhide iframe
   }
@@ -55,7 +59,7 @@ function MainContent(props) {
             {props.somethingToShow ? (props.showVideo ? <IFrame /> : <SearchResults queueVideo={queueVideo} searchData={props.searchData} />) : <p>make a search to begin</p>}
           </Col>
           <Col sm={5} className="border-check">
-            <VideoQueue renderedQueue={renderedQueue} queueSwap={queueSwap} />
+            <VideoQueue renderedQueue={renderedQueue} queueSwap={queueSwap} clearQueue={clearQueue} playVideo={videoJustStarted} />
           </Col>
         </Row>
       </Container>
