@@ -8,6 +8,7 @@ import SearchResults from './SearchResults';
 function MainContent(props) {
   const [renderedQueue, setRenderedQueue] = useState([]);
   const [newQueueId, setNewQueueId] = useState(0);
+  const [curIFrameVid, setCurIFrameVid] = useState(null);
 
   // Perform swap on a copied dummy array, set used queue state to result to rerender
   function queueSwap(queueId, isSwappingUp) {
@@ -42,12 +43,26 @@ function MainContent(props) {
     setRenderedQueue(newQueue);
   }
 
+  function removeFromQueue(queueId) {
+    for (let i = 0; i < renderedQueue.length; i++) {
+      if (queueId === renderedQueue[i].queueId) {
+        var temp = renderedQueue.slice();
+        temp.splice(i, 1);
+        setRenderedQueue(temp);
+      }
+    }
+  }
+
   function clearQueue() {
     setRenderedQueue([]);
   }
 
-  function videoJustStarted() {
-    // user chose to start watching a video, unhide iframe
+  function videoJustStarted(videoProps) {
+    // remove from queue
+    removeFromQueue(videoProps.queueId);
+    // unhide iframe and load with the thing
+    setCurIFrameVid(videoProps);
+    props.videoJustStarted();
   }
 
   return (
@@ -56,10 +71,14 @@ function MainContent(props) {
         <Row>
           <Col sm={7} className="border-check">
             <h1>Le Content</h1>
-            {props.somethingToShow ? (props.showVideo ? <IFrame /> : <SearchResults queueVideo={queueVideo} searchData={props.searchData} />) : <p>make a search to begin</p>}
+            {props.somethingToShow ?
+              (props.showVideo ?
+                <IFrame curVid={curIFrameVid} hotLoadNextVideo={props.hotLoadNextVideo} setHotLoadNextVideo={props.setHotLoadNextVideo} /> :
+                <SearchResults queueVideo={queueVideo} searchData={props.searchData} />)
+              : <p>make a search to begin</p>}
           </Col>
           <Col sm={5} className="border-check">
-            <VideoQueue renderedQueue={renderedQueue} queueSwap={queueSwap} clearQueue={clearQueue} playVideo={videoJustStarted} />
+            <VideoQueue renderedQueue={renderedQueue} queueSwap={queueSwap} removeFromQueue={removeFromQueue} clearQueue={clearQueue} playVideo={videoJustStarted} />
           </Col>
         </Row>
       </Container>

@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { Button, Container, Row } from 'react-bootstrap';
+import React, { useEffect } from 'react';
+import { Container, Row } from 'react-bootstrap';
 import './../App.css';
 
 function vidSrcTemplate(id) {
@@ -9,31 +9,31 @@ function vidSrcTemplate(id) {
 }
 
 var ytplayer;
-var exampleIDs = ['KedW5IUJrLI', 'a1UZRzbiE8Y', 'gGRz95Ry9ok'];
 
-const IFrame = () => {
-  const [curVideoID, setCurVideoID] = useState(0);
-  const [curVideoURL, setCurVideoURL] = useState("https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=0");
-
+const IFrame = (props) => {
   // YouTube API Ready callback routed here, so by this time 
   // YT.Player should exist and we can fill the div with the actual IFrame.
-  function check() {
+  function ytPlayerInit() {
     if (window.YT && window.YT.Player) {
-      ytplayer = new window.YT.Player('playerSpace', {
+      ytplayer = new window.YT.Player('player-space', {
         height: '390',
         width: '640',
-        videoId: 'M7lc1UVf-VE',
+        videoId: props.curVid.videoId,
       });
     }
   }
 
-  // Fetch and open a new vid
-  // TODO: supply props to component so can grab vid from queue
-  function switchVid() {
-    setCurVideoID((curVideoID + 1) % exampleIDs.length);
-    setCurVideoURL(vidSrcTemplate(exampleIDs[curVideoID]));
-    ytplayer.loadVideoByUrl(curVideoURL, 0);
-  }
+  // For switching videos when IFrame is already loaded
+  useEffect(() => {
+    if (!props.hotLoadNextVideo) {
+      ytPlayerInit();
+      props.setHotLoadNextVideo();
+    }
+    else {
+      ytplayer.loadVideoByUrl(vidSrcTemplate(props.curVid.videoId), 0);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [props.curVid.videoId])
 
   // Insert the link as a script tag to load the iframe API and 
   // reroute its ready callback so React can still handle it
@@ -43,26 +43,17 @@ const IFrame = () => {
       tag.src = "https://www.youtube.com/iframe_api";
       var firstScriptTag = document.getElementsByTagName('script')[0];
       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-      window.onYouTubePlayerAPIReady = check;
+      window.onYouTubePlayerAPIReady = ytPlayerInit;
     }
-    else {
-      check();
-    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (
     <Container>
       <Row>
         <div className='iframe-area'>
-          <div id="playerSpace"></div>
+          <div id="player-space"></div>
         </div>
-      </Row>
-      <Row>
-        <Button
-          onClick={() => switchVid()}
-        >
-          Change Video
-        </Button>
       </Row>
     </Container>
   );

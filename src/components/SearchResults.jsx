@@ -19,7 +19,7 @@ function SearchResults(props) {
             <div className='search-video-info'>
               {/* Right/bottom text for title/desc/channel */}
               <h4>{cardProps.title}</h4>
-              <p><a href={channelPrefix + cardProps.channelId}>{cardProps.channelTitle}</a></p>
+              <p><a href={channelPrefix + cardProps.channelId} target='_blank' rel='noopener noreferrer'>{cardProps.channelTitle}</a></p>
               <p>{cardProps.description} ...</p>
               <Button className='btn-info' onClick={() => props.queueVideo(cardProps)}>Add to Queue</Button>
             </div>
@@ -36,7 +36,7 @@ function SearchResults(props) {
         props.searchData.map(item => 
           (item.id.kind === "youtube#video") ?
           <SearchResultCard
-            videoId={item.videoId}
+            videoId={item.id.videoId}
             thumbnailLink={item.snippet.thumbnails.medium.url}
             title={decodeURI(item.snippet.title)}
             channelId={item.snippet.channelId}

@@ -170,8 +170,8 @@ p {
   margin-bottom: 1em;
 }
 
-.video-queue {
-  
+.video-queue Button {
+  margin: .4em;
 }
 
 .queue-card {

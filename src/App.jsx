@@ -10,12 +10,14 @@ function App() {
   const [showVideo, setShowVideo] = useState(false);
   const [searchData, setSearchData] = useState(null);
   const [nextPageToken, setNextPageToken] = useState("");
+  const [hotLoadNextVideo, setHotLoadNextVideo] = useState(false);
 
   function searchJustPerformed(data, nextPageToken) {
     setShowVideo(false);
     setSomethingToShow(true);
     setSearchData(data);
     setNextPageToken(nextPageToken);
+    setHotLoadNextVideo(false);
   }
 
   function videoJustStarted() {
@@ -23,13 +25,20 @@ function App() {
     setSomethingToShow(true);
   }
 
+  function doHotLoadNextVideo() {
+    setHotLoadNextVideo(true);
+  }
+
   return (
     <div className="App">
       <FocusHeader />
       <Search onSearchSubmit={searchJustPerformed} />
       <MainContent
+        hotLoadNextVideo={hotLoadNextVideo}
+        setHotLoadNextVideo={doHotLoadNextVideo}
         somethingToShow={somethingToShow}
         showVideo={showVideo}
+        videoJustStarted={videoJustStarted}
         searchData={searchData} 
         nextPageToken={nextPageToken} 
       />
