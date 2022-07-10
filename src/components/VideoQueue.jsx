@@ -1,5 +1,6 @@
 import './../App.css';
 import { Container, Card, Button } from 'react-bootstrap';
+import { Notifications, NotificationsHandler } from "react-notification-components";
 
 // Final component for self-managing and sortable video queue.
 // The queue management and the cards in the queue with their behavior 
@@ -58,12 +59,18 @@ function VideoQueue(props) {
     );
   }
 
+  function clearQueueWithNotif() {
+    NotificationsHandler.notify(`Cleared Video Queue`);
+    props.clearQueue();
+  }
+
   // The whole mapping of the list, this gets rerendered when the array state is updated
   return (
     <div className='video-queue'>
-      <h1>Le Queue of Videos</h1>
+      <Notifications />
+      <h1>Queue</h1>
       <Container className='search-results'>
-        <Button className='btn btn-danger' onClick={() => props.clearQueue()}>Clear Queue</Button>
+        <Button className='btn btn-danger' onClick={() => clearQueueWithNotif()}>Clear Queue</Button>
         {
           props.renderedQueue.length > 0 ?
             props.renderedQueue.map(card => <VideoCard data={card} key={card.queueId} />)

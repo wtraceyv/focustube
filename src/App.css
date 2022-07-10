@@ -19,6 +19,7 @@ body a {
 
 body h1 {
   color: rgb(124, 124, 124);
+  margin: 1em;
 }
 
 p {
@@ -35,22 +36,6 @@ p {
   height: 10vmin;
   pointer-events: none;
 }
-
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-} */
 
 .App-header {
   display: flex;
@@ -133,10 +118,11 @@ p {
 }
 
 .search-results {
-  max-height: 65vh;
+  /* max-height: 65vh;
   overflow-x: hidden;
-  overflow-y: scroll; 
-  border: 2px solid white;
+  overflow-y: scroll;  */
+  /* border: 2px solid white; */
+  background-color: #161816;
   border-radius: 20px;
   padding: 1em;
 }
@@ -178,6 +164,12 @@ p {
   display: flex;
   justify-content: center;
   margin: 2rem;
+}
+
+/* Configuring notification css because it is functional but hard to see */
+.rnc-notifications.notif-custom {
+  background-color: cyan;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 /* footer */

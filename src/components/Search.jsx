@@ -8,31 +8,10 @@ function Search(props) {
     setQuery(e.target.value);
   }
   const [query, setQuery] = useState("");
-  const [error, setError] = useState(null);
-  const [queryResults, setQueryResults] = useState(null);
-  const [nextPageToken, setNextPageToken] = useState("");
 
   const performSearch = (e) => {
     e.preventDefault(); // don't reload the page, let me do the fetch and such
-    const apiUrl = "https://www.googleapis.com/youtube/v3/search?";
-    const params = "key=AIzaSyCJC86RBvFG5yBXsgu2P2GFYF-tktb8yzs&part=snippet&maxResults=30&q="
-    const fullUrl = encodeURI(apiUrl + params + query);
-    // TODO: remove dummy data when done
-    let dummyData = require('./../dummy.json');
-    // fetch(fullUrl)
-    // .then((result) => {
-    //   return result.json(); // this returns a Promise
-    // })
-    // .then((data) => { // need this step to grab the Object I want ^
-    //   setQueryResults(data.items);
-    //   setNextPageToken(data.nextPageToken);
-    // },
-    // (error) => { // don't forget an error handle
-    //   setError(error);
-    //   console.log(error);
-    // });
-
-    props.onSearchSubmit(dummyData.items, dummyData.nextPageToken);
+    props.onSearchSubmit(query);
   }
 
   return (

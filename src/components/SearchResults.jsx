@@ -1,5 +1,6 @@
 import './../App.css';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Notifications, NotificationsHandler } from "react-notification-components";
 
 // Recieve and list a set of results from YouTube so user can choose to 
 // queue them for later. Shown after a search but hidden (by MainContent) 
@@ -8,6 +9,11 @@ function SearchResults(props) {
   let channelPrefix = "https://www.youtube.com/channel/";
 
   function SearchResultCard(cardProps) {
+    function queueVideoWithNotif() {
+      NotificationsHandler.notify(`Video, '${cardProps.title}' queued`);
+      props.queueVideo(cardProps);
+    }
+
     return (
       <Container className='search-card'>
         <Row>
@@ -21,7 +27,7 @@ function SearchResults(props) {
               <h4>{cardProps.title}</h4>
               <p><a href={channelPrefix + cardProps.channelId} target='_blank' rel='noopener noreferrer'>{cardProps.channelTitle}</a></p>
               <p>{cardProps.description} ...</p>
-              <Button className='btn-info' onClick={() => props.queueVideo(cardProps)}>Add to Queue</Button>
+              <Button className='btn-info' onClick={() => queueVideoWithNotif()}>Add to Queue</Button>
             </div>
           </Col>
         </Row>
@@ -32,6 +38,7 @@ function SearchResults(props) {
 
   return (
     <div className='search-results'>
+      <Notifications className='notif-custom' />
       {
         props.searchData.map(item => 
           (item.id.kind === "youtube#video") ?

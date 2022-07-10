@@ -1,6 +1,6 @@
 import './../App.css';
 import { useState } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Button, Container, Row, Col } from 'react-bootstrap';
 import IFrame from './IFrame';
 import VideoQueue from './VideoQueue';
 import SearchResults from './SearchResults';
@@ -70,12 +70,22 @@ function MainContent(props) {
       <Container style={{ maxWidth: 1800 }}>
         <Row>
           <Col sm={7} className="border-check">
-            <h1>Le Content</h1>
+            <h1>Search</h1>
+            {/* Show search results or video */}
             {props.somethingToShow ?
               (props.showVideo ?
                 <IFrame curVid={curIFrameVid} hotLoadNextVideo={props.hotLoadNextVideo} setHotLoadNextVideo={props.setHotLoadNextVideo} /> :
                 <SearchResults queueVideo={queueVideo} searchData={props.searchData} />)
               : <p>make a search to begin</p>}
+            {/* Show next page only when search results are showing */}
+            {
+              (props.somethingToShow && !props.showVideo) ?
+                <div>
+                  <Button className='btn' onClick={() => props.getPrevPage()}>Previous Page</Button>
+                  <Button className='btn' onClick={() => props.getNextPage()}>Next Page</Button>
+                </div>
+                : <></>
+            }
           </Col>
           <Col sm={5} className="border-check">
             <VideoQueue renderedQueue={renderedQueue} queueSwap={queueSwap} removeFromQueue={removeFromQueue} clearQueue={clearQueue} playVideo={videoJustStarted} />

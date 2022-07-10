@@ -4,12 +4,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-notification-components/dist/index.css';
+import { NotificationsProvider } from 'react-notification-components';
+
 import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
+  <NotificationsProvider>
     <App />
+  </NotificationsProvider>
   // </React.StrictMode>
 );
 
