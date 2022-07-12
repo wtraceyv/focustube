@@ -176,3 +176,16 @@ p {
 footer {
   margin-top: 10%;
 }
+
+/* Related to mobile-only behavior (queue show/hide button) */
+.mobile-queue-control {
+  position: fixed;
+  bottom: 2em;
+  right: 1em;
+  max-height: 3%;
+}
+
+.mobile-queue-control Button {
+  border: 2px solid azure;
+  font-size: 1.25em;
+}

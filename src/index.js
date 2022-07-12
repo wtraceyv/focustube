@@ -12,7 +12,7 @@ import './index.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
-  <NotificationsProvider>
+  <NotificationsProvider defaultTimeout={2000}>
     <App />
   </NotificationsProvider>
   // </React.StrictMode>

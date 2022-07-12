@@ -1,20 +1,24 @@
 import './App.css';
 import { useState } from 'react';
+import { isMobile } from 'react-device-detect';
 import Footer from './components/Footer';
 import FocusHeader from './components/Header';
 import MainContent from './components/MainContent';
+import MainContentMobile from './components/MainContentMobile';
 import Search from './components/Search';
+import MobileQueueButton from './components/MobileQueueButton';
 
 function App() {
+
+  /* Search functions and related states */
+
   const [somethingToShow, setSomethingToShow] = useState(false);
   const [showVideo, setShowVideo] = useState(false);
-
   const [searchData, setSearchData] = useState(null);
   const [lastQuery, setLastQuery] = useState("");
   const [nextPageToken, setNextPageToken] = useState("");
   const [prevPageToken, setPrevPageToken] = useState("");
   const [hotLoadNextVideo, setHotLoadNextVideo] = useState(false);
-
   // const [error, setError] = useState(null);
 
   function finishSearchCallback(data) {
@@ -61,6 +65,8 @@ function App() {
   }
 
   function newSearch(query) {
+    setShowVideo(false);
+    setMobileShowContentNotQueue(true);
     apiSearch(query, false, false);
   }
 
@@ -81,20 +87,45 @@ function App() {
     setHotLoadNextVideo(true);
   }
 
+  // for mobile only
+  const [mobileShowContentNotQueue, setMobileShowContentNotQueue] = useState(true);
+  function mobileSwitchContent() {
+    setMobileShowContentNotQueue(!mobileShowContentNotQueue);
+  }
+
   return (
     <div className="App">
       <FocusHeader />
       <Search onSearchSubmit={newSearch} />
-      <MainContent
-        searchData={searchData} 
-        hotLoadNextVideo={hotLoadNextVideo}
-        setHotLoadNextVideo={doHotLoadNextVideo}
-        somethingToShow={somethingToShow}
-        showVideo={showVideo}
-        videoJustStarted={videoJustStarted}
-        getNextPage={getNextPage}
-        getPrevPage={getPrevPage}
-      />
+      {
+        (isMobile) ?
+          <div>
+            {/* on mobile, add button for switching between search/video and queue views */}
+            <MainContentMobile
+              searchData={searchData}
+              hotLoadNextVideo={hotLoadNextVideo}
+              setHotLoadNextVideo={doHotLoadNextVideo}
+              somethingToShow={somethingToShow}
+              showVideo={showVideo}
+              videoJustStarted={videoJustStarted}
+              getNextPage={getNextPage}
+              getPrevPage={getPrevPage}
+              mobileShowContentNotQueue={mobileShowContentNotQueue}
+            />
+            <MobileQueueButton mobileShowContentNotQueue={mobileShowContentNotQueue} mobileSwitchContent={mobileSwitchContent} />
+          </div>
+          :
+          <MainContent
+            searchData={searchData}
+            hotLoadNextVideo={hotLoadNextVideo}
+            setHotLoadNextVideo={doHotLoadNextVideo}
+            somethingToShow={somethingToShow}
+            showVideo={showVideo}
+            videoJustStarted={videoJustStarted}
+            getNextPage={getNextPage}
+            getPrevPage={getPrevPage}
+          />
+      }
       <Footer />
     </div>
   );
