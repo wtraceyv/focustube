@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/focustube/static/css/main.329ae64c.css",
+    "main.js": "/focustube/static/js/main.123c2694.js",
+    "static/js/787.69ed8fda.chunk.js": "/focustube/static/js/787.69ed8fda.chunk.js",
+    "index.html": "/focustube/index.html",
+    "main.329ae64c.css.map": "/focustube/static/css/main.329ae64c.css.map",
+    "main.123c2694.js.map": "/focustube/static/js/main.123c2694.js.map",
+    "787.69ed8fda.chunk.js.map": "/focustube/static/js/787.69ed8fda.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.329ae64c.css",
+    "static/js/main.123c2694.js"
+  ]
+}
