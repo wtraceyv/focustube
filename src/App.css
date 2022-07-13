@@ -13,6 +13,8 @@ body {
   font-family: 'Nanum Gothic', sans-serif;
 }
 
+/* overriding bootstrap things */
+
 body a {
   color: cyan;
 }
@@ -33,10 +35,13 @@ body hr {
   margin-right: 1em;
 }
 
+body Button {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 15px;
+}
+
 p {
   color: rgb(124, 124, 124);
 }
-
 
 .App {
   background-color: var(--background-gray);
@@ -109,10 +114,7 @@ p {
   color: cyan;
 }
 
-/* Main Content area left */
-/* .border-check {
-  border-left: 2px solid white;
-} */
+/* iframe / video player */
 
 #player-space {
   border: 2px solid rgb(124, 124, 124);
@@ -122,6 +124,7 @@ p {
   background-color: #161816;
   border-radius: 20px;
   padding-top: 1em;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 40px;
 }
 
 #iframe-info {
@@ -151,6 +154,8 @@ p {
   height: 90%;
 }
 
+/* search results */
+
 .search-results {
   /* max-height: 65vh;
   overflow-x: hidden;
@@ -159,6 +164,7 @@ p {
   background-color: #161816;
   border-radius: 20px;
   padding: 1em;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 40px;
 }
 
 .search-card {
@@ -190,14 +196,25 @@ p {
   margin-bottom: 1em;
 }
 
+.page-turn-buttons Button {
+  margin: .75em;
+}
+
+/* VideoQueue */
+
 .video-queue Button {
-  margin: .4em;
+  margin: .2em;
 }
 
 .queue-card {
   display: flex;
   justify-content: center;
   margin: 2rem;
+}
+
+.card-body {
+  background-color: #282c34;
+  border-radius: 4px;
 }
 
 /* Configuring notification css because it is functional but hard to see */
@@ -221,6 +238,6 @@ footer {
 }
 
 .mobile-queue-control Button {
-  border: 2px solid azure;
   font-size: 1.25em;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 30px 8px;
 }

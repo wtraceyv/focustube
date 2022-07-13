@@ -17,15 +17,21 @@ function App() {
   const [searchData, setSearchData] = useState(null);
   const [lastQuery, setLastQuery] = useState("");
   const [nextPageToken, setNextPageToken] = useState("");
+  const [showPrevPageButton, setShowPrevPageButton] = useState(false);
   const [prevPageToken, setPrevPageToken] = useState("");
   const [hotLoadNextVideo, setHotLoadNextVideo] = useState(false);
-  // const [error, setError] = useState(null);
+  const [error, setError] = useState(null);
 
   function finishSearchCallback(data) {
     // Settings for hiding IFrame and sending search data down for showing
     setSearchData(data.items);
     setNextPageToken(data.nextPageToken);
-    setPrevPageToken(data.prevPageToken);
+    if (data.prevPageToken) {
+      setPrevPageToken(data.prevPageToken);
+      setShowPrevPageButton(true);
+    } else {
+      setShowPrevPageButton(false);
+    }
 
     setShowVideo(false);
     setSomethingToShow(true);
@@ -45,23 +51,24 @@ function App() {
       fullUrl += "&pageToken=" + prevPageToken;
     }
 
-    // TODO: remove dummy data when done
-    console.log(fullUrl);
-    let dummyData = require('./dummy.json');
-    finishSearchCallback(dummyData);
+    // TODO: uncomment these 3 lines and comment out whole fetch to test without using api quota 
 
-    // fetch(fullUrl)
-    // .then((result) => {
-    //   return result.json(); // this returns a Promise
-    // })
-    // .then((data) => { // need this step to grab the Object I want ^
-    //   console.log(data);
-    //   finishSearchCallback(data);
-    // },
-    // (error) => { // don't forget an error handle
-    //   setError(error);
-    //   console.log(error);
-    // });
+    // console.log(fullUrl);
+    // let dummyData = require('./dummy.json');
+    // finishSearchCallback(dummyData);
+
+    fetch(fullUrl)
+    .then((result) => {
+      return result.json(); // this returns a Promise
+    })
+    .then((data) => { // need this step to grab the Object I want ^
+      console.log(data);
+      finishSearchCallback(data);
+    },
+    (error) => { // don't forget an error handle
+      setError(error);
+      console.log(error);
+    });
   }
 
   function newSearch(query) {
@@ -95,6 +102,11 @@ function App() {
 
   return (
     <div className="App">
+      {
+        (error) ?
+          <div>error</div> :
+          <></>
+      }
       <FocusHeader />
       <Search onSearchSubmit={newSearch} />
       {
@@ -109,6 +121,7 @@ function App() {
               showVideo={showVideo}
               videoJustStarted={videoJustStarted}
               getNextPage={getNextPage}
+              showPrevPageButton={showPrevPageButton}
               getPrevPage={getPrevPage}
               mobileShowContentNotQueue={mobileShowContentNotQueue}
             />
@@ -123,6 +136,7 @@ function App() {
             showVideo={showVideo}
             videoJustStarted={videoJustStarted}
             getNextPage={getNextPage}
+            showPrevPageButton={showPrevPageButton}
             getPrevPage={getPrevPage}
           />
       }

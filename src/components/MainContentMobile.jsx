@@ -89,10 +89,14 @@ function MainContent(props) {
             {/* Search Results */}
             {
               (props.mobileShowContentNotQueue && props.somethingToShow && !props.showVideo ?
-                <div>
+                <div className='page-turn-buttons'>
                   <SearchResults queueVideo={queueVideo} searchData={props.searchData} />
-                  <Button className='btn' onClick={() => props.getPrevPage()}>Previous Page</Button>
-                  <Button className='btn' onClick={() => props.getNextPage()}>Next Page</Button>
+                  {
+                    (props.showPrevPageButton) ?
+                      <Button className='btn btn-info' onClick={() => props.getPrevPage()}>Previous Page</Button> :
+                      <></>
+                  }
+                  <Button className='btn btn-info' onClick={() => props.getNextPage()}>Next Page</Button>
                 </div> :
                 <></>
               )
@@ -119,34 +123,6 @@ function MainContent(props) {
             }
 
           </Col>
-
-          {/*
-          {
-            (props.mobileShowContentNotQueue ?
-              // Show search results or video
-              <Col sm={12} className="border-check">
-                <h1>Mobile Search, bitch</h1>
-                {props.somethingToShow ?
-                  (props.showVideo ?
-                    <IFrame curVid={curIFrameVid} hotLoadNextVideo={props.hotLoadNextVideo} setHotLoadNextVideo={props.setHotLoadNextVideo} /> :
-                    <SearchResults queueVideo={queueVideo} searchData={props.searchData} />)
-                  : <p>make a search to begin</p>}
-                {
-                  (props.somethingToShow && !props.showVideo) ?
-                    <div>
-                      <Button className='btn' onClick={() => props.getPrevPage()}>Previous Page</Button>
-                      <Button className='btn' onClick={() => props.getNextPage()}>Next Page</Button>
-                    </div>
-                    : <></>
-                }
-              </Col> :
-              <Col sm={12} className="border-check">
-                <VideoQueue renderedQueue={renderedQueue} queueSwap={queueSwap} removeFromQueue={removeFromQueue} clearQueue={clearQueue} playVideo={videoJustStarted} />
-              </Col>
-            )
-          }
-  */}
-
         </Row>
       </Container>
     </div>

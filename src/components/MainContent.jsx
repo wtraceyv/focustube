@@ -80,9 +80,13 @@ function MainContent(props) {
             {/* Show next page only when search results are showing */}
             {
               (props.somethingToShow && !props.showVideo) ?
-                <div>
-                  <Button className='btn' onClick={() => props.getPrevPage()}>Previous Page</Button>
-                  <Button className='btn' onClick={() => props.getNextPage()}>Next Page</Button>
+                <div className='page-turn-buttons'>
+                  {
+                    (props.showPrevPageButton) ?
+                      <Button className='btn btn-info' onClick={() => props.getPrevPage()}>Previous Page</Button> :
+                      <></>
+                  }
+                  <Button className='btn btn-info' onClick={() => props.getNextPage()}>Next Page</Button>
                 </div>
                 : <></>
             }

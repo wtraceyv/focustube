@@ -56,7 +56,7 @@ const IFrame = (props) => {
             <div id="player-space"></div>
           </div>
           <div id='iframe-info'>
-            <h4>{props.curVid.title} - <a target="_blank" rel="noopener noreferrer" href={"https://youtube.com/channels/" + props.curVid.channelId}>{props.curVid.channelTitle}</a> </h4>
+            <h4>{props.curVid.title} - <a target="_blank" rel="noopener noreferrer" href={"https://youtube.com/channel/" + props.curVid.channelId}>{props.curVid.channelTitle}</a> </h4>
             <hr />
             <p>{props.curVid.description}</p>
           </div>
