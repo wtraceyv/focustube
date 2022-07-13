@@ -26,7 +26,7 @@ function SearchResults(props) {
               {/* Right/bottom text for title/desc/channel */}
               <h4>{cardProps.title}</h4>
               <p><a href={channelPrefix + cardProps.channelId} target='_blank' rel='noopener noreferrer'>{cardProps.channelTitle}</a></p>
-              <p>{cardProps.description} ...</p>
+              <p>{cardProps.description}</p>
               <Button className='btn-info' onClick={() => queueVideoWithNotif()}>Add to Queue</Button>
             </div>
           </Col>
@@ -48,7 +48,7 @@ function SearchResults(props) {
             title={decodeURI(item.snippet.title)}
             channelId={item.snippet.channelId}
             channelTitle={item.snippet.channelTitle}
-            description={item.snippet.description.split('.')[0]}
+            description={item.snippet.description}
             key={item.etag}
           /> :
           <div key={item.etag}></div>

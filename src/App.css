@@ -22,6 +22,17 @@ body h1 {
   margin: 1em;
 }
 
+body h5 {
+  color: rgb(124, 124, 124);
+}
+
+body hr {
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
 p {
   color: rgb(124, 124, 124);
 }
@@ -103,6 +114,29 @@ p {
   border-left: 2px solid white;
 } */
 
+#player-space {
+  border: 2px solid rgb(124, 124, 124);
+}
+
+#iframe-container {
+  background-color: #161816;
+  border-radius: 20px;
+  padding-top: 1em;
+}
+
+#iframe-info {
+  text-align: left;
+}
+
+#iframe-info h4 {
+  color: white;
+}
+
+#iframe-info hr {
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
 .iframe-area {
   position: relative;
   padding-bottom: 56.25%;
@@ -174,7 +208,8 @@ p {
 
 /* footer */
 footer {
-  margin-top: 10%;
+  margin-top: 3em;
+  margin-bottom: 5em;
 }
 
 /* Related to mobile-only behavior (queue show/hide button) */
