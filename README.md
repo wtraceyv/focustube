@@ -10,6 +10,8 @@ Focustube is pretty much built on vanilla React. A few utility libraries like re
 
 Clone the project: `git clone https://github.com/wtraceyv/focustube.git`
 
+Make sure you have `npm` installed and run `npm install` to install dependencies.
+
 To test on localhost: `npm start` in the project directory
 
 To deploy to GitHub Pages, replace the "homepage" parameter in `package.json` with your username and repo name on GitHub, then run `npm run deploy`
